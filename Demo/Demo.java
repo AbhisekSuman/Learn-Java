@@ -8,7 +8,12 @@ import java.util.*;
 
 public class Demo {
     public static void main(String[] args) {
-
+        TreeSet set = new TreeSet<>();
+        set.add("Abhi");
+//        set.remove("Abhi");
+//        System.out.println(set);
+        System.out.println(set.contains("Abhi")? "yes" : "no");
+        set.last();
     }
 
     public static String bubbleSortCharcter(char[] arr) {
