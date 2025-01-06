@@ -6,7 +6,7 @@ import java.io.ObjectOutputStream;
 
 public class Serialization {
     public static void main(String[] args) throws IOException {
-        Student student = new Student(101, "Abhi");
+        Student student = new Student(101, "Abhi", 21);
         System.out.println(student);
         System.out.println("THIS OBJECT WILL BE REMOVED IN 2MS AFTER PROGRAM EXECUTES.");
 
@@ -15,6 +15,5 @@ public class Serialization {
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(student
         );
-
     }
 }
